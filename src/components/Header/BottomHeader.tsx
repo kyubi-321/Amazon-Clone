@@ -24,7 +24,7 @@ const BottomHeader = () => {
 
        <p className='hidden md:inline-flex  items-center gap-1 h-8 px-2 border border-transparent hover:border-white
        cursor-pointer duration-300'>
-        Today's deals
+        Today`&apos;`s deals
        </p>
 
        <p className='hidden md:inline-flex  items-center gap-1 h-8 px-2 border border-transparent hover:border-white

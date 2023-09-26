@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { useSelector } from 'react-redux'
 import { StateProps, StoreProduct } from '../../type'
 import CartProduct from '@/components/CartProduct'

@@ -37,7 +37,7 @@ const Header = () => {
         }
     },[session])
 
-    console.log(allData)
+    
 
     
   // Search area
@@ -49,13 +49,13 @@ const Header = () => {
   };
 
   useEffect(() => {
-    if (allData) {
+    
       const filtered = allData.filter((item: StoreProduct) =>
         item.title.toLowerCase().includes(searchQuery.toLowerCase())
       );
       setFilteredProducts(filtered);
-    }
-  }, [allData, searchQuery]);
+    
+  }, [searchQuery]);
   return (
     <div className='w-full h-20 text-lightText bg-amazon_blue sticky top-0 z-50'>
         
