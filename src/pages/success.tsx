@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { useDispatch } from 'react-redux'
 import { resetCart } from '@/store/nextSlice'
 
-const success = () => {
+const SuccessPage = () => {
     const dispatch = useDispatch();
   return (
     <div className='m-0 p-20 bg-gray-300 flex flex-col items-center justify-center'>
@@ -17,4 +17,4 @@ const success = () => {
   )
 }
 
-export default success
+export default SuccessPage

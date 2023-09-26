@@ -6,7 +6,7 @@ import ResetCart from '@/components/ResetCart'
 import Link from 'next/link'
 import CartPayment from '@/components/CartPayment'
 
-const cart = () => {
+const CartPage = () => {
   const {productData} = useSelector((state:StateProps)=>state.next)
   return (
     <div className='bg-gray-300 max-w-screen-2xl mx-auto px-6 grid grid-cols-5 gap-10 py-4'>
@@ -51,4 +51,4 @@ const cart = () => {
   )
 }
 
-export default cart
+export default CartPage
