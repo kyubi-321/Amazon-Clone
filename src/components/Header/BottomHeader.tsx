@@ -47,14 +47,7 @@ const BottomHeader = () => {
         sell
        </p>
 
-       {
-        
-          <button className='hidden md:inline-flex  items-center gap-1 h-8 px-2 text-amazon_yellow border border-transparent hover:border-red-600 hover:text-red-600
-       cursor-pointer duration-300'>
-        Sign Out
-       </button>
-        
-       }
+       
     </div>
   )
 }
