@@ -130,7 +130,7 @@ const Header = () => {
         </div>
 
         {
-            userInfo?(
+            userInfo ? (
                 <div  className='flex items-center px-2 border-transparent hover:border-white cursor-pointer duration-300 h-[70%] gap-1'>
 
            <Image
