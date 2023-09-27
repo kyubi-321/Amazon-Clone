@@ -67,8 +67,8 @@ const CartPayment = () => {
                 <FormattedPrice  amount={totalAmount}/>
             </span>
         </p>
-        {
-            userInfo ? (
+        
+           
                 <div className='flex flex-col items-center'>
             <button onClick={handleCheckout} className='w-full h-10 text-sm font-semibold bg-amazon_blue  cursor-pointer text-white rounded-lg hover:bg-amazon_yellow hover:text-amazon_blue duration-300'>
                 Proceed To Buy
@@ -76,18 +76,8 @@ const CartPayment = () => {
 
             
         </div>
-            ):(
-                <div className='flex flex-col items-center'>
-            <button className='w-full h-10 text-sm font-semibold bg-amazon_blue bg-opacity-50 cursor-not-allowed text-white rounded-lg'>
-                Proceed To Buy
-            </button>
-
-            <p className='text-xs font-semibold text-red-500 mt-1 animate-bounce'>
-                Please login to continue
-            </p>
-        </div>
-            )
-        }
+            
+        
         
     </div>
   )
