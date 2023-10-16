@@ -9,7 +9,7 @@ import CartPayment from '@/components/CartPayment'
 const CartPage = () => {
   const {productData} = useSelector((state:StateProps)=>state.next)
   return (
-    <div className='bg-gray-300 max-w-screen-2xl mx-auto px-6 grid grid-cols-5 gap-10 py-4'>
+    <div className='bg-gray-300  flex-col justify-center m-1  md:bg-gray-300 max-w-screen-2xl mx-auto px-6   py-4'>
       {
         productData.length>0 ? (
           <>
@@ -32,7 +32,7 @@ const CartPage = () => {
 
             </div>
 
-            <div className='h-64 p-4 rounded-lg bg-white  col-span-1 flex  items-center justify-center'>
+            <div className='h-64 p-4 rounded-lg bg-white  col-span-1 flex  items-center justify-center mt-4 sm:mt-0'>
               <CartPayment/>
             </div>
           </>
@@ -41,7 +41,7 @@ const CartPage = () => {
             <div className='bg-white h-64 flex flex-col col-span-5  items-center justify-center py-5 shadow-lg shadow-gray-400'>
               <h1 className='text-lg font-bold'>Your cart is empty</h1>
               <Link href={"/"}>
-                <button className='w-64 h-10 bg-amazon_blue text-white rounded-lg hover:bg-amazon_yellow hover:text-amazon_blue'>Go back to shopping</button>
+                <button className='w-64 h-10 bg-amazon_blue text-white rounded-lg hover:bg-amazon_yellow hover:text-amazon_blue   mt-4'>Go back to shopping</button>
               </Link>
             </div>
             </>

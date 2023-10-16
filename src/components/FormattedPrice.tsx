@@ -9,7 +9,7 @@ const FormattedPrice = ({amount} :Props) => {
         "en-US",
         {
             style:"currency",
-            currency:"USD",
+            currency:"INR",
             minimumFractionDigits:2
         }
     )

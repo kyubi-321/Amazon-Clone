@@ -129,9 +129,27 @@ const Header = () => {
       )}
         </div>
 
-        
+        {
+            userInfo ? (
+                <div  className='flex items-center px-2 border-transparent hover:border-white cursor-pointer duration-300 h-[70%] gap-1'>
+
+           <Image
+           className='w-8 h-8 rounded-full object-cover'
+           width={8}
+           height={8}
            
-                <div  className='text-sm text-gray-500 flex flex-col justify-center
+           src={userInfo.image}
+           alt='UserImage'
+           />
+           <div className='text-xs text-gray-100 flex flex-col justify-between'>
+            <p className='text-white font-bold'>{userInfo.name}</p>
+            <p>{userInfo.email}</p>
+           </div>
+
+        </div>
+
+            ):(
+                <div onClick={()=>signIn()} className='text-sm text-gray-500 flex flex-col justify-center
         border border-transparent hover:border-white cursor-pointer duration-300 h-[70%]'>
             <p>Hello, sign in</p>
             <p className='text-white font-bold flex items-center'>
@@ -141,8 +159,8 @@ const Header = () => {
             </span>
             </p>
         </div>
-            
-        
+            )
+        }
 
         {/* favourite */}
         <Link
